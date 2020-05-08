@@ -1,19 +1,17 @@
-# frozen_string_literal: true
-
 def bubble_sort(arr)
-  num = arr.length
     loop do
-     change = false
-      (num - 1).times do |i|
-         if arr[i] > arr[i + 1]
-        arr[i], arr[i + 1] = arr[i + 1], arr[i]
-        change = true
+      change = false
+        (arr.length - 1).times do |i| 
+            if arr[i] > arr[i + 1]
+                arr[i], arr[i + 1] = arr[i +1], arr[i]
+                change = true
+            end
         end
-      end
-     break if not change
+      break if !change
     end
   arr
 end
 
-arr = [2, 3, 5, 2, 8, 7, 9, 5, 3, 4, 9, 7, 5, 5]
+arr = [1,5,3,6,7,9,8,7,1,2,5,4,6]
 print bubble_sort(arr)
+
