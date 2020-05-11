@@ -2,7 +2,10 @@ def bubble_sort(array)
     loop do
         change = false
         array.each_with_index do |item, index|
-            bubble_sort[item] = index
+            if (item[index]) > (item[index + 1])
+                (item[index]), (item[index + 1]) = (item[index + 1]), (item[index])
+            change = true
+            end
         end
         break if !change
     end
