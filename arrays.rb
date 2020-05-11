@@ -30,3 +30,23 @@ family = {  uncles: ["bob", "joe", "steve"],
   family.select {|k,v| family_array << v}
 
   p family_array
+
+  my_best_songs = {
+      aerosmith: "I don't wanna miss a thing",
+      beatles: "Love me do",
+      elton: "Your song",
+      bandera: "Mientes",
+      claxons: "Tal vez tienes que irte"
+  }
+
+  my_best_songs.each do |k,v|
+    p k
+end
+
+my_best_songs.each do |k,v|
+    p v
+end
+
+person = {name: 'Bob', occupation: 'web developer', hobbies: 'painting'}
+
+p person[:name]
